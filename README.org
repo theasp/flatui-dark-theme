@@ -1,6 +1,6 @@
 #+TITLE: FlatUi Dark Theme
 
-A dark theme for Emacs inspired by [[https://github.com/steckerhalter/grandshell-theme][grandshell-theme]] and [[https://github.com/fniessen/emacs-leuven-theme][leuven-theme]], using the [[https://flatuicolors.com/][FlatUi colors]].
+A dark theme for Emacs inspired by [[https://github.com/steckerhalter/grandshell-theme][grandshell-theme]] and [[https://github.com/fniessen/emacs-leuven-theme][leuven-theme]], using the [[https://flatuicolors.com/][FlatUi colors]].  It also has support for using ~variable-pitch-mode~ in conjunction with ~org-mode~.
 
 * Usage
 
@@ -10,6 +10,8 @@ If you want to load the theme in your ~.emacs~ or similar you can add:
 
 #+BEGIN_SRC elisp
 (load-theme 'flatui-dark t)
+;; Optionally turn on variable fonts for org-mode
+;; (add-hook 'org-mode-hook 'variable-pitch-mode)
 #+END_SRC
 
 and the theme should be loaded and activated on startup.
