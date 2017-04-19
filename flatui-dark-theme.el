@@ -448,7 +448,7 @@
    `(magit-section-title ((,class (:foreground ,c3b :weight bold))))
 
    ;; magit `next'
-   `(magit-section ((,class (:inherit nil :weight bold))))
+   `(magit-section ((,class (:inherit nil))))
    `(magit-section-highlight ((,class (:background ,c5b))))
    `(magit-section-heading ((,class (:foreground ,c3a))))
    `(magit-branch-local ((,class (:foreground ,c1a))))
@@ -458,11 +458,11 @@
    `(magit-diff-hunk-heading ((,class (:foreground ,c4a))))
    `(magit-diff-hunk-heading-highlight ((,class (:inherit magit-diff-hunk-heading :weight bold))))
    `(magit-diff-context ((,class (:foreground ,c9b))))
-   `(magit-diff-context-highlight ((,class (:inherit magit-diff-context :foreground ,c9a :background ,c5b))))
+   `(magit-diff-context-highlight ((,class (:foreground ,c9a :background ,c5b))))
    `(magit-diff-added ((,class (:foreground ,c2b))))
-   `(magit-diff-added-highlight ((,class (:inherit magit-diff-context-highlight :foreground ,black :background ,c2b))))
+   `(magit-diff-added-highlight ((,class (:foreground ,c2a :background ,c5b))))
    `(magit-diff-removed ((,class (:foreground ,c8b))))
-   `(magit-diff-removed-highlight ((,class (:inherit magit-diff-context-highlight :foreground ,black :background ,c8b))))
+   `(magit-diff-removed-highlight ((,class (:foreground ,c8a :background ,c5b))))
 
    ;; markdown
    `(markdown-url-face ((,class (:inherit link))))
