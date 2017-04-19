@@ -1,6 +1,6 @@
 #+TITLE: FlatUi Dark Theme
 
-A dark theme for Emacs inspired by [[https://github.com/steckerhalter/grandshell-theme][~grandshell-theme~]] and [[https://github.com/fniessen/emacs-leuven-theme][~leuven-theme~]].
+A dark theme for Emacs inspired by [[https://github.com/steckerhalter/grandshell-theme][grandshell-theme]] and [[https://github.com/fniessen/emacs-leuven-theme][leuven-theme]].
 
 * Usage
 
