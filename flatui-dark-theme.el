@@ -1,10 +1,11 @@
-;;; flatui-dark-theme.el --- Dark color theme for Emacs with flatui colors
+;;; flatui-dark-theme.el --- Dark color theme with colors from https://flatuicolors.com/
 
 ;; Copyright 2017, Andrew Phillips
 
 ;; Author: Andrew Phillips <theasp@gmail.com>
 ;; Keywords: color theme dark flatui faces
 ;; URL: https://github.com/theasp/flatui-dark-theme
+;; Package-Requires: ((emacs "24"))
 
 ;; This file is not part of GNU Emacs.
 
@@ -25,9 +26,9 @@
 
 ;;; Commentary:
 
-;; Dark color theme for Emacs with flatui colors.  The theme structure
-;; has been borrowed from grandshell-theme, which borrowed it from
-;; color-theme-sanityinc-solarized.
+;; Dark color theme with flatui colors from https://flatuicolors.com/.
+;; The theme structure has been borrowed from grandshell-theme, which
+;; borrowed it from color-theme-sanityinc-solarized.
 
 ;; URLs:
 ;; grandshell-theme: https://github.com/steckerhalter/grandshell-theme
@@ -40,7 +41,7 @@
 
 ;;; Code:
 
-(deftheme flatui-dark "Dark color theme for Emacs with flatui colors")
+(deftheme flatui-dark "Dark color theme with colors from https://flatuicolors.com/")
 
 (let ((class '((class color) (min-colors 16777216)))
       (c1a "#1abc9c")
