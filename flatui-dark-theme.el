@@ -43,7 +43,7 @@
 
 (deftheme flatui-dark "Dark color theme with colors from https://flatuicolors.com/")
 
-(let ((class '((class color) (min-colors 16777216)))
+(let ((class '((class color) (min-colors 89)))
       (c1a "#1abc9c")
       (c1b "#16a085")
       (c2a "#2ecc71")
