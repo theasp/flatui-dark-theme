@@ -562,14 +562,14 @@
 
    ;; rainbow-delimiters
    `(rainbow-delimiters-depth-1-face ((,class (:foreground ,c8a))))
-   `(rainbow-delimiters-depth-2-face ((,class (:foreground ,c1a))))
+   `(rainbow-delimiters-depth-2-face ((,class (:foreground ,c3a))))
    `(rainbow-delimiters-depth-3-face ((,class (:foreground ,c7a))))
    `(rainbow-delimiters-depth-4-face ((,class (:foreground ,c2a))))
    `(rainbow-delimiters-depth-5-face ((,class (:foreground ,c6a))))
-   `(rainbow-delimiters-depth-6-face ((,class (:foreground ,c3a))))
-   `(rainbow-delimiters-depth-7-face ((,class (:foreground ,c5a))))
+   `(rainbow-delimiters-depth-6-face ((,class (:foreground ,c1a))))
+   `(rainbow-delimiters-depth-7-face ((,class (:foreground ,c9a))))
    `(rainbow-delimiters-depth-8-face ((,class (:foreground ,c4a))))
-   `(rainbow-delimiters-depth-9-face ((,class (:foreground ,c9a))))
+   `(rainbow-delimiters-depth-9-face ((,class (:foreground ,c0a))))
    `(rainbow-delimiters-unmatched-face ((,class (:background ,c8a :weight bold))))
 
    ;; regex-tool
