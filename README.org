@@ -2,6 +2,12 @@
 
 A dark theme for Emacs inspired by [[https://github.com/steckerhalter/grandshell-theme][grandshell-theme]] and [[https://github.com/fniessen/emacs-leuven-theme][leuven-theme]], using the [[https://flatuicolors.com/][FlatUi colors]].  It also has support for using ~variable-pitch-mode~ in conjunction with ~org-mode~.
 
+[[https://melpa.org/#/flatui-dark-theme][file:https://melpa.org/packages/flatui-dark-theme-badge.svg]]
+* Installation
+** MELPA
+
+You can install the theme using the packages on [[https://melpa.org/][MELPA]], see the [[https://melpa.org/#/getting-started][Getting Started]] page for instructions for adding the MELPA repository to your configuration.  Then use ~M-x package-list-packages~, select ~flatui-dark-theme~ from the list by pressing ~i~, then press ~x~ to execute the changes. At that point, the package will be installed.
+
 * Usage
 
 In Emacs24 you can just use ~M-x customize-themes~ to select themes.
