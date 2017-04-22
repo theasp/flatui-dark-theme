@@ -120,7 +120,7 @@
    `(font-lock-constant-face ((,class (:foreground ,c1a))))
    `(font-lock-doc-face ((,class (:foreground ,c7a))))
    `(font-lock-doc-string-face ((,class (:foreground ,c6a))))
-   `(font-lock-function-name-face ((,class (:foreground ,c4a))))
+   `(font-lock-function-name-face ((,class (:foreground ,c3a))))
    `(font-lock-keyword-face ((,class (:foreground ,c4a))))
    `(font-lock-negation-char-face ((,class (:foreground ,c2b))))
    `(font-lock-preprocessor-face ((,class (:foreground ,c4b))))
