@@ -97,7 +97,7 @@
    `(header-line ((,class (:inherit mode-line :foreground ,c4a :background nil))))
    `(minibuffer-prompt ((,class (:foreground ,c9a))))
    `(fringe ((,class (:background ,c5b))))
-   `(cursor ((,class (:inverse-video t :background ,c9b))))
+   `(cursor ((,class (:background ,c0a :foreground ,black))))
    `(border ((,class (:background ,c5b))))
    `(widget-button ((,class (:underline t))))
    `(widget-field ((,class (:background ,c5b :box (:line-width 1 :color ,c9b)))))
