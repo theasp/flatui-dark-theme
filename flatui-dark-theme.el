@@ -596,16 +596,6 @@
    `(sml/filename ((,class (:foreground ,yellow-bright))))
    `(sml/vc-edited ((,class (:foreground ,orange-bright))))
 
-   ;; term
-   ;; `(term-color-black ((,class (:background ,grey-blue-dark :foreground ,grey-blue-dark))))
-   ;; `(term-color-blue ((,class (:background ,blue-dark :foreground ,blue-dark))))
-   ;; `(term-color-cyan ((,class (:background ,magenta-dark :foreground ,magenta-dark))))
-   ;; `(term-color-green ((,class (:background ,turquoise-bright :foreground ,turquoise-bright))))
-   ;; `(term-color-magenta ((,class (:background ,magenta-bright :foreground ,magenta-bright))))
-   ;; `(term-color-red ((,class (:background ,red-dark :foreground ,red-dark))))
-   ;; `(term-color-white ((,class (:background ,grey-blue-bright :foreground ,grey-blue-bright))))
-   ;; `(term-color-yellow ((,class (:background ,yellow-bright :foreground ,yellow-bright))))
-
    ;; undo-tree
    `(undo-tree-visualizer-default-face ((,class (:foreground ,grey-bright1))))
    `(undo-tree-visualizer-current-face ((,class (:foreground ,green-dark :weight bold))))
