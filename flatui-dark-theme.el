@@ -1,4 +1,5 @@
 ;;; flatui-dark-theme.el --- Dark color theme with colors from https://flatuicolors.com/
+;; -*- lexical-binding: t; -*-
 
 ;; Copyright 2017, Andrew Phillips
 
