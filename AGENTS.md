@@ -101,7 +101,8 @@ every time.
    release if it fails.
 2. `git status; git diff` to catch all changes; check `.gitignore`.
 3. Move the `CHANGELOG.org` `[Unreleased]` entries into a
-   `[X.Y.Z] - YYYY-MM-DD` section; add a new empty `[Unreleased]` above it.
+   `[X.Y.Z] - YYYY-MM-DD` section. Do not add a new empty `[Unreleased]`
+   section — it only exists while there are unreleased changes.
 4. Commit all changes (changelog + theme) in one commit.
 5. Create a semver tag matching the new changelog version: `git tag X.Y.Z`.
    Never reuse a version number.
@@ -127,9 +128,13 @@ lives at `CHANGELOG.org` in the project root (org-mode; version headings are
   palette entries, color changes, breaking changes, bug fixes).
 - Add entries under the `[Unreleased]` section using these categories: `Added`,
   `Changed`, `Deprecated`, `Removed`, `Fixed`, `Security` (and `Breaking` for
-  breaking changes).
+  breaking changes). Create the `[Unreleased]` section only when there are
+  unreleased changes; remove it when a release empties it.
+- Within a version section, categories always appear in that fixed order
+  (`Added` → `Changed` → `Deprecated` → `Removed` → `Fixed` → `Security`);
+  include only the categories that have entries.
 - Keep descriptions concise and user-focused — what changed from the user's
   perspective, not implementation details.
 - Commit changelog updates in the same commit as the change they document.
 - Before releasing, move `[Unreleased]` entries to a versioned section
-  (e.g. `[1.0.0] - YYYY-MM-DD`) and add a new empty `[Unreleased]` above it.
+  (e.g. `[1.0.0] - YYYY-MM-DD`); drop the now-empty `[Unreleased]` section.

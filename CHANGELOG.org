@@ -5,8 +5,6 @@ All notable changes to this project will be documented in this file.
 The format is based on [[https://keepachangelog.com/en/1.1.0/][Keep a Changelog]],
 and this project adheres to [[https://semver.org/spec/v2.0.0.html][Semantic Versioning]].
 
-* [Unreleased]
-
 * [1.0.0] - 2026-11-18
 
 ** Added
@@ -43,14 +41,14 @@ and this project adheres to [[https://semver.org/spec/v2.0.0.html][Semantic Vers
 
 * [0.2.1] - 2017-04-22
 
+** Added
+
+- README: MELPA installation instructions and a package badge.
+
 ** Changed
 
 - The cursor now uses ~inverse-video~ so it stays visible on any background color.
 - Changed the ~font-lock-function-name-face~ foreground color.
-
-** Added
-
-- README: MELPA installation instructions and a package badge.
 
 * [0.2.0] - 2017-04-20
 
