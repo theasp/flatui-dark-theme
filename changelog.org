@@ -1,0 +1,75 @@
+#+TITLE: Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [[https://keepachangelog.com/en/1.1.0/][Keep a Changelog]],
+and this project adheres to [[https://semver.org/spec/v2.0.0.html][Semantic Versioning]].
+
+* [Unreleased]
+
+* [1.0.0] - 2026-11-18
+
+** Added
+
+- The theme is now rebuilt on the modus-themes engine: it declares a complete FlatUI palette and lets `modus-themes-theme` generate the full face set, instead of defining ~550 faces by hand.
+- New `flatui-dark-modus-palette-user` and `flatui-dark-modus-palette-overrides` `defcustom`s for extending/overriding palette colors.
+- ERT test suite (`flatui-dark-theme-test.el`) verifying the theme activates, is registered in `modus-themes-registered-items`, has valid face inheritance, and a complete FlatUI palette.
+
+** Changed
+
+- Requires Emacs 29.1+ and `modus-themes` 5.0.0+.
+
+** Removed
+
+- The hand-written per-mode faces (web-mode, gnus, erc, helm, magit, org, etc.); the modus-themes engine's own face set is used and colored by the palette.
+
+* [0.3.1] - 2026-10-19
+
+** Changed
+
+- Added the ~lexical-binding: t~ file cookie, silencing the "Missing lexical-binding cookie" warning on Emacs 29+.
+
+** Removed
+
+- Removed the commented-out ~term~ face definitions.
+
+* [0.3.0] - 2017-04-23
+
+** Changed
+
+- Renamed the internal color variables from positional names (~c1a~, ~c2b~, ~c3b~, …) to descriptive names (~turquoise-bright~, ~green-dark~, ~blue-bright~, …). Readability change only; the rename itself does not alter any face color.
+- The cursor is now a solid foreground color (black on ~grey-dark1~) instead of ~inverse-video~.
+- Reordered and re-coloured the ~rainbow-delimiters~ faces, using darker tones.
+
+* [0.2.1] - 2017-04-22
+
+** Changed
+
+- The cursor now uses ~inverse-video~ so it stays visible on any background color.
+- Changed the ~font-lock-function-name-face~ foreground color.
+
+** Added
+
+- README: MELPA installation instructions and a package badge.
+
+* [0.2.0] - 2017-04-20
+
+** Added
+
+- ~Package-Requires: ((emacs "24"))~ header, declaring the minimum Emacs version for MELPA.
+
+** Changed
+
+- Lowered the required color count from 16777216 to 89, so the theme works on 8-bit (256-color) terminals.
+- Re-coloured the ~rainbow-delimiters~ faces.
+- Updated the package description to reference https://flatuicolors.com/.
+
+** Removed
+
+- The separate ~flatui-dark-theme-pkg.el~ file; package metadata now lives in the ~flatui-dark-theme.el~ header.
+
+* [0.1.0] - 2017-04-19
+
+** Added
+
+- Initial release of the ~flatui-dark~ theme: a dark color theme using the FlatUI palette, with optional ~variable-pitch-mode~ support for ~org-mode~.
