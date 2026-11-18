@@ -11,13 +11,13 @@ and this project adheres to [[https://semver.org/spec/v2.0.0.html][Semantic Vers
 
 ** Added
 
-- The theme is now rebuilt on the modus-themes engine: it declares a complete FlatUI palette and lets `modus-themes-theme` generate the full face set, instead of defining ~550 faces by hand.
-- New `flatui-dark-modus-palette-user` and `flatui-dark-modus-palette-overrides` `defcustom`s for extending/overriding palette colors.
-- ERT test suite (`flatui-dark-theme-test.el`) verifying the theme activates, is registered in `modus-themes-registered-items`, has valid face inheritance, and a complete FlatUI palette.
+- The theme is now rebuilt on the modus-themes engine: it declares a complete FlatUI palette and lets ~modus-themes-theme~ generate the full face set, instead of defining ~550 faces by hand.
+- New ~flatui-dark-modus-palette-user~ and ~flatui-dark-modus-palette-overrides~ ~defcustom~s for extending/overriding palette colors.
+- ERT test suite (~flatui-dark-theme-test.el~) verifying the theme activates, is registered in ~modus-themes-registered-items~, has valid face inheritance, and a complete FlatUI palette.
 
 ** Changed
 
-- Requires Emacs 29.1+ and `modus-themes` 5.0.0+.
+- Requires Emacs 29.1+ and ~modus-themes~ 5.0.0+.
 
 ** Removed
 
