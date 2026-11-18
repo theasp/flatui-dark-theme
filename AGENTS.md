@@ -21,7 +21,7 @@ There is no build step and no test suite. The theme requires `modus-themes`
 ```
 flatui-dark-theme/
 ├── AGENTS.md                    # This file
-├── changelog.org                # Release changelog (org-mode, Keep a Changelog format)
+├── CHANGELOG.org               # Release changelog (org-mode, Keep a Changelog format)
 ├── flatui-dark-theme.el         # The theme — palette + modus-themes-theme call
 ├── flatui-dark-theme-test.el    # ERT test suite
 ├── README.org                   # Project readme (org-mode)
@@ -100,7 +100,7 @@ every time.
 1. Run the ERT test suite (see Build / Verification Commands); abort the
    release if it fails.
 2. `git status; git diff` to catch all changes; check `.gitignore`.
-3. Move the `changelog.org` `[Unreleased]` entries into a
+3. Move the `CHANGELOG.org` `[Unreleased]` entries into a
    `[X.Y.Z] - YYYY-MM-DD` section; add a new empty `[Unreleased]` above it.
 4. Commit all changes (changelog + theme) in one commit.
 5. Create a semver tag matching the new changelog version: `git tag X.Y.Z`.
@@ -119,11 +119,11 @@ Version increments:
 ## Changelog
 
 The project uses [Keep a Changelog](https://keepachangelog.com/). The changelog
-lives at `changelog.org` in the project root (org-mode; version headings are
+lives at `CHANGELOG.org` in the project root (org-mode; version headings are
 `* [X.Y.Z] - YYYY-MM-DD` with `** Added` / `** Changed` / `** Fixed` /
 `** Removed` subsections).
 
-- **Always update `changelog.org`** when making changes that affect users (new
+- **Always update `CHANGELOG.org`** when making changes that affect users (new
   palette entries, color changes, breaking changes, bug fixes).
 - Add entries under the `[Unreleased]` section using these categories: `Added`,
   `Changed`, `Deprecated`, `Removed`, `Fixed`, `Security` (and `Breaking` for
