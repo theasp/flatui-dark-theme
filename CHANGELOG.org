@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [[https://keepachangelog.com/en/1.1.0/][Keep a Changelog]],
 and this project adheres to [[https://semver.org/spec/v2.0.0.html][Semantic Versioning]].
 
+* [1.0.1] - 2026-11-18
+
+** Added
+
+- Screenshot tooling (~tools/screenshot.el~ + ~tools/sample.el~) to regenerate ~screenshot1.png~ via ~x-export-frames~ under Xvfb.
+
+** Changed
+
+- Regenerated ~screenshot1.png~ from the current modus-themes build (the previous one depicted the retired hand-written theme).
+
 * [1.0.0] - 2026-11-18
 
 ** Added
