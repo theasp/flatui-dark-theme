@@ -26,6 +26,9 @@ flatui-dark-theme/
 ├── flatui-dark-theme-test.el    # ERT test suite
 ├── README.org                   # Project readme (org-mode)
 ├── screenshot1.png              # Screenshot referenced by the readme
+├── tools/
+│   ├── sample.el                 # Sample buffer shown in the screenshot
+│   └── screenshot.el             # Regenerates screenshot1.png (x-export-frames)
 └── LICENSE                      # GNU GPL v2+
 ```
 
@@ -54,6 +57,21 @@ fails at `(require 'modus-themes)` — that is the missing dependency, not a
 theme bug. Install it (e.g. via MELPA) first.
 
 Run the test suite before any release; abort if it fails.
+
+## Screenshot
+
+Regenerate `screenshot1.png` after a color change. Requires a Cairo build of
+Emacs (has `x-export-frames`) and a virtual display (Xvfb on Linux):
+
+```bash
+xvfb-run -a -s "-screen 0 1024x768x24" \
+  emacs -Q -L <modus-themes-dir> --load tools/screenshot.el
+```
+
+`tools/screenshot.el` renders the theme applied to `tools/sample.el` in a
+fixed-size frame and writes `screenshot1.png` next to the repo root. `emacs
+--batch` cannot do this (no GUI frame). Font/size are the
+`flatui-dark-screenshot-*` variables at the top of the script.
 
 ## Code Conventions
 
